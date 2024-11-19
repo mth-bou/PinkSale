@@ -15,9 +15,10 @@ import Icons from "./views/Icons/Icons.js";
 import NotificationsPage from "./views/Notifications/Notifications.js";
 import UpgradeToPro from "./views/UpgradeToPro/UpgradeToPro.js";
 
-import TokenLock from "./views/TokenLock/TokenLock.js";
+// import TokenLock from "./views/TokenLock/TokenLock.js";
+import Lockers from "./views/Lockers/Lockers";
 import Presale from "./views/Presale/Presale.js";
-import LiquidityLock from "./views/LiquidityLock/LiquidityLock.js";
+// import LiquidityLock from "./views/LiquidityLock/LiquidityLock.js";
 import Farm from "./views/Farm/Farm.js";
 import Staking from "./views/Staking/Staking.js";
 import CreateToken from "./views/CreateToken/CreateToken.js";
@@ -26,6 +27,14 @@ import RTLPage from "./views/RTLPage/RTLPage.js";
 
 const dashboardRoutes = [
   {
+    path: "/lockers",
+    name: "Lockers",
+    rtlName: "لوحة القيادة",
+    icon: LockIcon,
+    component: Lockers,
+    layout: "/client",
+  },
+/*  {
     path: "/tokenlock",
     name: "Token Lock",
     rtlName: "التطور للاحترافية",
@@ -40,7 +49,7 @@ const dashboardRoutes = [
     icon: LockIcon,
     component: LiquidityLock,
     layout: "/client",
-  },
+  },*/
   {
     path: "/farm",
     name: "Farm",
